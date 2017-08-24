@@ -1,0 +1,31 @@
+Git global setup
+
+git config --global user.name "Venkata Oruganti"
+git config --global user.email "venkata.oruganti@thomsonreuters.com"
+
+Create a new repository
+
+git clone "gitURL"
+cd Angular2BootUP
+touch README.md
+git add README.md
+git commit -m "add README"
+git push -u origin master
+
+Existing folder
+
+cd existing_folder
+git init
+git remote add origin "gitURL"
+git add .
+git commit -m "Initial commit"
+git push -u origin master
+
+Existing Git repository
+
+cd existing_repo
+git remote add origin "gitURL"
+git push -u origin --all
+git push -u origin --tags
+
+

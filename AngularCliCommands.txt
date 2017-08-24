@@ -1,0 +1,108 @@
+
+***********************************************************************************
+*****************  Creating  Angular-cli Applications & Components ****************
+***********************************************************************************
+
+npm install -g angular-cli
+
+Generating and serving an Angular2 project via a development server
+
+ng new PROJECT_NAME
+cd PROJECT_NAME
+ng serve
+
+
+Generating Components, Directives, Pipes and Services
+
+scaffold	usage
+Component	ng g component my-new-component
+Directive	ng g directive my-new-directive
+Pipe		ng g pipe my-new-pipe
+Service		ng g service my-new-service
+Class		ng g class my-new-class
+Interface	ng g interface my-new-interface
+Enum		ng g enum my-new-enum
+Module		ng g module my-module
+
+
+***********************************************************************************
+*****************  Building Angular-cli Applications ******************************
+***********************************************************************************
+
+
+Creating a build
+
+ng build
+
+# these are equivalent
+ng build --target=production --environment=prod
+ng build --prod --env=prod
+ng build --prod
+
+# and so are these
+ng build --target=development --environment=dev
+ng build --dev --e=dev
+ng build --dev
+ng build
+
+
+Chaging the ouptut Directory of a Build
+
+by changing the "outDir" property in angular-cli.json file.
+by changing the "outDir" property in angular-cli.json file.
+
+or using the command ng build --output-path ../path/to/use
+
+
+
+***********************************************************************************
+*****************  Testing Angular-cli Applications *******************************
+***********************************************************************************
+
+Running unit tests
+ng test
+
+Running end-to-end tests
+ng e2e
+
+Running Code Coverage Test
+ng test --watch=false --code-coverage
+
+
+***********************************************************************************
+***********************************************************************************
+***** 3rd Party Tool Installations and Updating The Existing Packages *************
+***********************************************************************************
+***********************************************************************************
+
+3rd Party Library Installation
+
+npm install lib-name --save
+
+eg: npm install d3 --save
+for dev types: npm install @types/d3 --save-dev
+
+
+Updating angular-cli
+To update angular-cli to a new version, you must update both the global package and your project's local package.
+
+Global package:
+
+npm uninstall -g angular-cli
+npm cache clean
+npm install -g angular-cli@latest(version number)
+Local project package:
+
+rm -rf node_modules dist # use rmdir on Windows
+npm install --save-dev angular-cli@latest
+npm install
+ng update
+
+Primary error Must be inside Angular-cli project
+
+npm install -g angular-cli
+npm install -g @angular/cli
+
+
+
+
